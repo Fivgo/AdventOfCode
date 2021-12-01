@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <queue>
+//Yeah I know I'm using namespace. Plz let me just have this one.
 using namespace std;
 /* PART 1
 int main(){
@@ -23,14 +23,15 @@ int main(){
     return 0;
 }
 */
-
+//PART 2
 int main(){
     ifstream myfile("input.txt");
     if(myfile.is_open()){
-        cout << "this took";
+
         int ind = 0;
         int c = 0;
         int queue[] = {0,0,0};
+
         myfile >> queue[ind++%3];
         myfile >> queue[ind++%3];
         myfile >> queue[ind++%3];
@@ -43,12 +44,7 @@ int main(){
             if(chalTot > total) c++;
             total = chalTot;
         }
-
         cout << c;
-
-
-
-
     }
 
     myfile.close();
