@@ -5,6 +5,10 @@
         "ostream": "cpp",
         "vector": "cpp",
         "iterator": "cpp",
-        "xlocale": "cpp"
+        "xlocale": "cpp",
+        "string": "cpp",
+        "xstring": "cpp",
+        "limits": "cpp",
+        "utility": "cpp"
     }
 }
